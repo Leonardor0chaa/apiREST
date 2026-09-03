@@ -12,7 +12,7 @@ public class Carro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String modeloDoCarro;
+    private String modelo;
     private String marca;
     private String cor;
     private int ano;
@@ -20,10 +20,10 @@ public class Carro {
     private double preco;
     private String tipoCombustivel;
 
-    public Carro(Long id, String modeloDoCarro, String marca, String cor, int ano,
+    public Carro(Long id, String modelo, String marca, String cor, int ano,
                  String placa, double preco, String tipoCombustivel) {
         this.id = id;
-        this.modeloDoCarro = modeloDoCarro;
+        this.modelo = modelo;
         this.marca = marca;
         this.cor = cor;
         this.ano = ano;
@@ -40,12 +40,12 @@ public class Carro {
         this.id = id;
     }
 
-    public String getModeloDoCarro() {
-        return modeloDoCarro;
+    public String getModelo() {
+        return modelo;
     }
 
-    public void setModeloDoCarro(String modeloDoCarro) {
-        this.modeloDoCarro = modeloDoCarro;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
     public String getMarca() {
